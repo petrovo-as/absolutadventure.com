@@ -1,7 +1,8 @@
 # absolutadventure.com
 
-Veřejná záloha webu absolutadventure.com, převedeného ze staré instalace
-CMS Made Simple na statické HTML (bez PHP, bez databáze).
+Public archive of absolutadventure.com, converted from an old CMS Made
+Simple installation to static HTML (no PHP, no database).
 
-Web byl staženo pomocí `wget --mirror` a ručně vyčištěn (sjednocené CSS,
-odstraněná Google Analytics, opravené odkazy). Hostováno přes GitHub Pages.
+The site was downloaded with `wget --mirror` and manually cleaned up
+(consolidated CSS, removed Google Analytics, fixed links). Hosted via
+GitHub Pages.
