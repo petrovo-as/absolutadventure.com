@@ -1,0 +1,264 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style, adapted to CMSMS by Daniel Westergren */
+
+/* SITE SPECIFIC LAYOUT */
+    body {
+        margin: 0;
+        padding: 1em 0em;
+        text-align: center;
+    }
+    div#pagewrapper {
+        margin: 0 auto;
+        width: 1000px;
+        padding: 0;
+        text-align: left;
+    }
+    #container {
+	position: relative;
+	margin: 0;
+    }
+    
+    /* HEADER */
+        div#header {
+            margin: 0;
+            padding: 0;
+            height: 121px;
+            background:  url(../images/absolutadventure.jpg) no-repeat top; 
+        }
+    /* END HEADER */
+    
+    
+    /* CONTENT */
+        div#content {
+
+        }
+        
+        /* MAIN */
+            div#main {
+
+            }
+        /* END MAIN */
+        
+        /* SUB */
+            div#sub {
+                
+            }
+        /* END SUB */
+        
+    /* END CONTENT */
+    
+    
+    /* FOOTER */
+        div#footer {
+
+        }
+
+        div#footer p {
+            font-size: 0.8em;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+        }
+    /* END FOOTER */
+/* END LAYOUT */
+
+
+div.breadcrumbs {
+   padding: 1em 0;
+   text-align: left;
+   font-size: 90%;
+   margin: 0 1em;
+   border-bottom: 1px dotted #000;
+}
+
+div.flags {
+  float: right;
+  width: 18px;
+  padding: 1em 0;
+  text-align: right;
+  margin: 0 1em 0 0;
+}
+
+div.left49 {
+  float: left;
+  width: 49%;
+  }
+
+div.right49 {
+  float: right;
+  width: 49%;
+  text-align: right;
+  }
+/* Stylesheet: Layout Modified On 2014-10-14 15:46:46 */
+/* A CSS Framework by Mike Stenhouse of Content with Style, adapted to CMSMS by Daniel Westergren */
+
+/* NAV BAR AT THE TOP AND TWO COLUMNS OF CONTENT */
+    div#content {
+        position: relative;
+        margin: 1.5em auto 2em 0;
+        padding: 0;
+        text-align: left;
+    }
+    div#main {
+        float: left;
+        width: 68%;
+        display: inline;
+        padding: 0 2%;
+    }
+    div#menu_vert {
+        float: right;
+        width: 27%;
+        display: inline;
+    }
+    div#menu_horiz {
+        width: 100%;
+        text-align: left;
+    }
+/* END CONTENT */
+/* Stylesheet: Layout EllNav H/V R 1Col Modified On 2008-03-07 11:11:10 */
+/* Horizontal menu for the CMS CSS Menu Module */
+/* by Alexander Endresen */
+
+#menu_horiz {
+   margin-left: 1px;
+   margin-right: 1px;
+}
+
+/* The wrapper clears the floating elements of the menu */
+
+/* Fix for Opera 8 */
+.clearb { clear: both; }
+#menuwrapper { 
+   /* Fix for Opera 8 */ 
+   /*   overflow: hidden;  */ 
+   background-color: #ECECEC;
+   border-bottom: 1px solid #C0C0C0;
+   width: 100%;
+}
+
+/* Set the width of the menu elements at second level. Leaving first level flexible. */
+#primary-nav li li { 
+   width: 250px; 
+}
+
+
+/* Unless you know what you do, do not touch this */ 
+#primary-nav, #primary-nav ul { 
+   list-style: none; 
+   margin: 0px; 
+   padding: 0px; 
+}
+#primary-nav ul { 
+   position: absolute; 
+   top: auto; 
+   display: none; 
+}
+#primary-nav ul ul { 
+   margin-top: 1px;
+   margin-left: -1px;
+   left: 100%; 
+   top: 0px; 
+}
+	
+#primary-nav li { 
+   margin-left: -1px;
+   float: left; 
+}
+#primary-nav li li { 
+   margin-left: 0px;
+   margin-top: -1px;
+   float: none; 
+   position: relative; 
+}
+
+/* Styling the basic apperance of the menu elements */
+#primary-nav a { 
+   display: block; 
+   margin: 0px; 
+   padding: 5px 10px; 
+   text-decoration: none; 
+   color: #333333;
+}
+#primary-nav li a { 
+   border-right: 1px solid #C0C0C0;
+   border-left: 1px solid #C0C0C0;
+}
+#primary-nav li li a { 
+   border: 1px solid #C0C0C0;
+}	
+#primary-nav li, #primary-nav li.menuparent { 
+   background-color: #ececec; 
+}
+
+/* Styling the basic apperance of the active page elements (shows what page in the menu is being displayed) */
+
+#primary-nav li.menuactive { 
+   background-color: #ABABAB;
+}
+
+#primary-nav a.menuactive { 
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* Styling the basic apperance of the menuparents - here styled the same on hover (fixes IE bug) */
+#primary-nav ul li.menuparent, 
+#primary-nav ul li.menuparent:hover, 
+#primary-nav ul li.menuparenth { 
+/* arrow for menuparents */
+   background-image: url(../images/cms/arrow.gif); 
+   background-position: center right; 
+   background-repeat: no-repeat; 
+}
+
+
+/* Styling the apperance of menu items on hover */
+
+#primary-nav li:hover, 
+#primary-nav li.menuh, 
+#primary-nav li.menuparenth, 
+#primary-nav li.menuactiveh { 
+   background-color: #C2C2C2;
+}
+
+/* The magic - set to work for up to a 3 level menu, but can be increased unlimited */
+
+/* 
+just add 
+#primary-nav li:hover ul ul, 
+#primary-nav li.menuparenth ul ul ul,
+for fourth level 
+*/
+#primary-nav ul, 
+#primary-nav li:hover ul, 
+#primary-nav li:hover ul ul, 
+#primary-nav li.menuparenth ul, 
+#primary-nav li.menuparenth ul ul { 
+   display: none; 
+}
+
+/* add 
+#primary-nav ul ul ul li:hover ul, 
+#primary-nav ul ul ul li.menuparenth ul,
+for fourth level
+*/
+#primary-nav li:hover ul, 
+#primary-nav ul li:hover ul, 
+#primary-nav ul ul li:hover ul, 
+#primary-nav li.menuparenth ul, 
+#primary-nav ul li.menuparenth ul, 
+#primary-nav ul ul li.menuparenth ul { 
+   display: block; 
+}
+
+
+/* IE Hacks */
+#primary-nav li li { 
+   float: left; 
+   clear: both; 
+}
+#primary-nav li li a { 
+   height: 1%; 
+}
+/* Stylesheet: 2008 Navigation: CSSMenu - Horizontal Modified On 2014-10-14 15:45:47 */
